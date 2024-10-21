@@ -1,3 +1,4 @@
+import java.util.Locale;
 import java.util.Scanner;
 public class Main {
 
@@ -5,15 +6,14 @@ public class Main {
 
      Scanner sc = new Scanner(System.in);
 
-     double n1;
-     double n2;
+     double raio;
 
-     n1 = sc.nextDouble();
-     sc.nextLine();
-     n2 = sc.nextDouble();
-     sc.nextLine();
+     raio = sc.nextDouble();
+     raio = Math.pow(raio, 2);
+     
 
-      System.out.printf("%.0f%n", n1+n2);
+     System.out.printf("A=%.4f%n", 3.14159 * raio);
+     Locale.setDefault(Locale.US);
 
 
      sc.close();
